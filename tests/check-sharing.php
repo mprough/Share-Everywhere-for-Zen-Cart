@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 
+require __DIR__ . '/polyfills.php';
 define('IS_ADMIN_FLAG', false);
 define('TABLE_PRODUCTS', 'products');
 define('TABLE_PRODUCTS_DESCRIPTION', 'products_description');
@@ -25,7 +26,7 @@ function check(bool $passed, string $message): void
     }
 }
 
-$root = dirname(__DIR__) . '/files/zc_plugins/ShareEverywhere/v1.0.6';
+$root = dirname(__DIR__) . '/files/zc_plugins/ShareEverywhere/v1.0.7';
 require $root . '/lib/ShareEverywhere.php';
 $manifest = require $root . '/manifest.php';
 check($manifest['pluginVersion'] === 'v' . ShareEverywhere::VERSION, 'Version mismatch.');
@@ -89,6 +90,6 @@ ob_start();
 require $root . '/lib/storefront.php';
 $html = ob_get_clean();
 check(str_contains($html, '&lt;Share&gt;'), 'Custom label was not escaped.');
-check(str_contains($html, '/store/zc_plugins/ShareEverywhere/v1.0.6/assets/storefront.js'), 'Asset path is incorrect.');
+check(str_contains($html, '/store/zc_plugins/ShareEverywhere/v1.0.7/assets/storefront.js'), 'Asset path is incorrect.');
 check(!str_contains($html, 'qrcode.js'), 'QR code library loaded while the QR button was disabled.');
 echo "Product data, URL validation, settings, and storefront rendering checks passed.\n";

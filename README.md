@@ -9,15 +9,17 @@ Share Everywhere is a free plugin for Zen Cart ecommerce software. It adds confi
 
 | Zen Cart | PHP |
 | --- | --- |
+| 1.5.8 | 7.4 through 8.0 |
 | 2.0.x and 2.1.x | 8.0 through 8.3 |
 | 2.2.x | 8.2 through 8.5 |
+| 3.0.0 | 8.3 through 8.5 |
 
 Use [Zen Cart's server requirements](https://docs.zen-cart.com/user/first_steps/server_requirements/) for your installed release. The package uses Plugin Manager and supports the standard product-page hooks in Bootstrap and Responsive Classic.
 
 ## Install and configure
 
 1. Copy the contents of `files/zc_plugins/` into the store's `zc_plugins/` directory.
-2. In Zen Cart admin, open **Modules > Plugin Manager** and install **Share Everywhere for Zen Cart 1.0.6**.
+2. In Zen Cart admin, open **Modules > Plugin Manager** and install **Share Everywhere for Zen Cart 1.0.7**.
 3. Open **Catalog > Share Everywhere**, choose a layout, and enable the destinations you want.
 4. Select **Enable on product pages**, save, and open an enabled product page.
 
@@ -42,7 +44,7 @@ Enter a product ID and choose **Prepare test links** to test the custom destinat
 
 ## Upgrade and uninstall
 
-Upload the new version and use **Modules > Plugin Manager** to upgrade the existing installation in place. Settings are stored in one plugin-owned configuration row and preserved by the upgrade handler. Uninstall in Plugin Manager removes that row and the Catalog menu registration. The plugin creates no tables and requires no collation changes.
+Upload the new version and use **Modules > Plugin Manager** to upgrade the existing installation in place. Settings are stored in one plugin-owned configuration row and preserved by the upgrade handler. Upgrading from 1.0.6 or earlier also repairs labels and links that earlier versions saved with `&amp;` in place of `&`. Uninstall in Plugin Manager removes that row and the Catalog menu registration. The plugin creates no tables and requires no collation changes.
 
 ## Troubleshooting
 

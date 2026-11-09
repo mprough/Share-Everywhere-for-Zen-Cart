@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.7
+
+- Support Zen Cart 1.5.8 and 3.0.0 and PHP 7.4. Installing on 1.5.8 failed with a fatal error because the installer used configuration helpers that start at Zen Cart 2.0.
+- Save labels, profile URLs, and custom link templates exactly as entered. Zen Cart's admin sanitizer stored each `&` as `&amp;` and added another layer on every save, which broke custom share links and profile URLs with more than one query parameter.
+- Repair settings saved by earlier versions during the upgrade.
+
 ## 1.0.6
 
 - Prepare the free public package with updated compatibility, installation, and support documentation.

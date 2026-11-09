@@ -1,0 +1,14 @@
+.se-admin { margin: 1.25rem auto; max-width: 76rem; padding: 0 1rem; }
+.se-admin fieldset, .se-admin details { border: 1px solid #b9c1c8; margin: 0 0 1rem; padding: .75rem; }
+.se-admin summary { cursor: pointer; font-weight: bold; margin-bottom: .5rem; }
+.se-admin-fields, .se-admin-custom { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+.se-admin label { margin: .25rem 0; }
+.se-admin-table { overflow-x: auto; }
+.se-admin table { border-collapse: collapse; width: 100%; }
+.se-admin th, .se-admin td { border-bottom: 1px solid #dde2e6; padding: .4rem; text-align: start; }
+.se-admin th img { vertical-align: middle; }
+.se-admin input[type="number"] { width: 5rem; }
+.se-admin input[type="url"] { display: block; max-width: 100%; width: 28rem; }
+.se-admin-url { flex: 1 1 100%; }
+.se-admin-url input { width: min(100%, 42rem); }
+.se-admin-error { color: #8b1720; font-weight: bold; }

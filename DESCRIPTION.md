@@ -8,4 +8,4 @@ Give shoppers an easy way to share products from your Zen Cart store. Share Ever
 - Add and preview custom share links or store profile links. Offer Native Share where supported, Copy link, Print, and a locally generated product QR code.
 - Manage everything under Catalog > Share Everywhere in Zen Cart admin.
 
-Free download for Zen Cart 2.0.x, 2.1.x, and 2.2.x. Installs through Plugin Manager. Installation Extra.
+Free download for Zen Cart 1.5.8, 2.0.x, 2.1.x, 2.2.x, and 3.0.0. Installs through Plugin Manager. Installation Extra.

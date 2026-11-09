@@ -1,8 +1,9 @@
 <?php
 declare(strict_types=1);
 
+require __DIR__ . '/polyfills.php';
 define('IS_ADMIN_FLAG', false);
-$root = dirname(__DIR__) . '/files/zc_plugins/ShareEverywhere/v1.0.6';
+$root = dirname(__DIR__) . '/files/zc_plugins/ShareEverywhere/v1.0.7';
 require $root . '/lib/ShareEverywhere.php';
 
 $settings = ShareEverywhere::defaults();
